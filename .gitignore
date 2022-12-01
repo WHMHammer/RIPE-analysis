@@ -1,5 +1,6 @@
 /target
 /Cargo.lock
-/RIPE-data
-*.png
-*.csv
+/RIPE-data/*
+!/RIPE-data
+/*.png
+/*.csv
