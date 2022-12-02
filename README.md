@@ -9,3 +9,12 @@ ASes are classified as Enterprise Customer (EC), Small Transit Provider (STP), L
 ## Figure 1
 
 ![Figure 1 (upper)](results/Figure%201.1.png)
+![Figure 1 (lower)](results/Figure%201.2.png)
+
+## Figure 7
+
+![Figure 7](results/Figure%207.png)
+
+## Figure 8
+
+![Figure 8](results/Figure%208.png)
