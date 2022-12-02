@@ -294,7 +294,7 @@ fn reproduce_figure1(graphs: &BTreeMap<usize, (AsGraph, AsGraph)>) {
     {
         let mut f = File::create("results/Figure 1.1.csv").unwrap();
         use std::io::Write;
-        writeln!(f, "year,v4,v6").unwrap();
+        writeln!(f, "year,IPv4,IPv6").unwrap();
         for (&year, (v4_graph, v6_graph)) in graphs.iter() {
             println!("Counting ASes for year {}", year);
             writeln!(
@@ -310,7 +310,7 @@ fn reproduce_figure1(graphs: &BTreeMap<usize, (AsGraph, AsGraph)>) {
     {
         let mut f = File::create("results/Figure 1.2.csv").unwrap();
         use std::io::Write;
-        writeln!(f, "year,v4,v6").unwrap();
+        writeln!(f, "year,IPv4,IPv6").unwrap();
         for (&year, (v4_graph, v6_graph)) in graphs.iter() {
             println!("Counting ASes for year {}", year);
             writeln!(
@@ -328,7 +328,7 @@ fn reproduce_figure1(graphs: &BTreeMap<usize, (AsGraph, AsGraph)>) {
 fn reproduce_figure7(graphs: &BTreeMap<usize, (AsGraph, AsGraph)>) {
     let mut f = File::create("results/Figure 7.csv").unwrap();
     use std::io::Write;
-    writeln!(f, "year,v4,v6").unwrap();
+    writeln!(f, "year,IPv4,IPv6").unwrap();
     for (&year, (v4_graph, v6_graph)) in graphs.iter() {
         println!("Calculating average path length for year {}", year);
         let mut v4_mean = v4_graph.paths.iter().fold(0, |sum, path| sum + path.len()) as f64
@@ -341,7 +341,7 @@ fn reproduce_figure7(graphs: &BTreeMap<usize, (AsGraph, AsGraph)>) {
         if v6_mean.is_nan() {
             v6_mean = 0.0;
         }
-        writeln!(f, "{},{},{}", year, v4_mean, v6_mean,).unwrap();
+        writeln!(f, "{},{},{}", year, v4_mean, v6_mean).unwrap();
     }
 }
 

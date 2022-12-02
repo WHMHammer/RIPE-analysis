@@ -1,10 +1,8 @@
 /.vscode
 /target
 /Cargo.lock
+/venv/*
 /_RIPE-data/*
 /RIPE-data/*
 /_AS-graph-serializations/*
 /AS-graph-serializations/*
-/*.csv
-/*.png
-/*.txt
