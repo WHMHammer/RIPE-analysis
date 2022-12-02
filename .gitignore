@@ -1,6 +1,10 @@
+/.vscode
 /target
 /Cargo.lock
+/_RIPE-data/*
 /RIPE-data/*
-!/RIPE-data
-/*.png
+/_AS-graph-serializations/*
+/AS-graph-serializations/*
 /*.csv
+/*.png
+/*.txt

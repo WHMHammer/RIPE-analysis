@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 bgpkit-parser = "*"
-plotters = "*"
+bincode = "*"
+serde = { version = "*", features = ["derive"] }
 tokio = { version = "*", features = ["rt", "macros", "rt-multi-thread"] }
